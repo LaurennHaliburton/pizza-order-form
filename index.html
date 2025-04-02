@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Order Menu</title>
+
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+  
+<body>
+    
+    <header>
+      <h1> <center>Pizza Pizza</h1>
+    </header>
+    <main>
+      <h2> <center> Order Now</h2>
+    </main>
+    <form>
+      <label for="First-Last Name">First & Last Name</label> <br />
+      <input type="text" name="First-Last Name" id="First-Last Name" />
+      <br />
+
+      <label for="Phone Number">Phone Number</label> <br />
+      <input type="text" name="Phone Number" id="Phone Number" />
+
+      <br/>
+      <br>
+    
+      <label for="Size">Size of Pizza</label>
+      <select name="Size" id="">Size
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+      <h3>Toppings</h3>
+       <input type="checkbox" id="Cheese" name="Cheese" value="Cheese"><label for="Toppings"> Cheese </label> <br>
+       <input type="checkbox" id="Pineapples" name="Pineapples" value="Pineapples">
+<label for="Toppings"> Pineapples </label>
+<br>
+<input type="checkbox" id="jalapenos" name="jalapenos" value="jalapenos">
+<label for="Toppings"> Jalapenos </label>
+<br>
+<input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+<label for="Toppings"> Pepperoni </label>
+<br>
+<p>Delivery instructions</p>
+<textarea></textarea>
+<br> <input type="submit" value="Submit">
+<br>
+
+<br>
+
+<h2>Orders</h2>
+ <tr>
+    <th>Name</th>
+    <th>Size</th>
+    <th>Toppings</th>
+    <th>Special Instructions</th>
+</tr>
+<br> <tr>
+    <td>Kevin</td>
+    <td>Medium</td>
+    <td>Cheese & Pineapples</td>
+    <td>Please leave it at the door</td>
+</tr>
+<br> <tr>
+    <td>Janice</td>
+    <td>Large</td>
+    <td>Jalapenos</td>
+    <td>Hand it to me</td>
+</tr>
+<br> <tr>
+    <td>Linda</td>
+    <td>Medium</td>
+    <td>Pepperoni</td>
+    <td>Give it to the door man</td>
+</tr>
+
+    </form>
+    <footer>
+      <p><center> ©️ March 2025 Cohort</p> </center>
+    </footer>
+  </body>
+</html>
