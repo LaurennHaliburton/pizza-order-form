@@ -16,36 +16,40 @@
       <h2>Order Now</h2>
     </main>
     
-    <form>
-      <label for="First-Last Name">First & Last Name</label> <br />
-      <input type="text" name="First-Last Name" id="First-Last Name" />
-      <br />
-
-      <label for="Phone Number">Phone Number</label> <br />
-      <input type="text" name="Phone Number" id="Phone Number" />
+    <form id="pizzaForm">
+        <label for="nameInput">First & Last Name</label><br />
+        <input type="text" id="nameInput" name="name" /><br />
+        
+        <label for="phoneInput">Phone Number</label><br />
+        <input type="text" id="phoneInput" name="phone" /><br /><br />
 
       <br />
       <br />
     
-      <label for="Size">Size of Pizza</label>
-      <select name="Size" id="">Size
-        <option value="small">Small</option>
-        <option value="medium">Medium</option>
-        <option value="large">Large</option>
-      </select>
+      <label for="sizeInput">Size of Pizza</label>
+<select id="sizeInput" name="size">
+  <option value="">-- Select a Size --</option>
+  <option value="small">Small</option>
+  <option value="medium">Medium</option>
+  <option value="large">Large</option>
+</select>
       
       <h3>Toppings</h3>
-      <input type="checkbox" id="Cheese" name="Cheese" value="Cheese">
-      <label for="Toppings"> Cheese </label> <br>
-      <input type="checkbox" id="Pineapples" name="Pineapples" value="Pineapples">
-      <label for="Toppings"> Pineapples </label> <br>
-      <input type="checkbox" id="jalapenos" name="jalapenos" value="jalapenos">
-      <label for="Toppings"> Jalapenos </label> <br>
-      <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
-      <label for="Toppings"> Pepperoni </label> <br>
+      <input type="checkbox" id="cheese" name="topping" value="Cheese" />
+      <label for="cheese">Cheese</label><br />
+    
+      <input type="checkbox" id="pineapples" name="topping" value="Pineapples" />
+      <label for="pineapples">Pineapples</label><br />
+    
+      <input type="checkbox" id="jalapenos" name="topping" value="Jalapenos" />
+      <label for="jalapenos">Jalapenos</label><br />
+    
+      <input type="checkbox" id="pepperoni" name="topping" value="Pepperoni" />
+      <label for="pepperoni">Pepperoni</label><br />
+      
       
       <p>Delivery instructions</p>
-      <textarea></textarea>
+      <textarea id="instructionsInput"></textarea>
       <br> 
       <input type="submit" value="Submit">
       <br />
@@ -78,6 +82,7 @@
         </tr>
       </table>
     </form>
+    <script src="script.js" defer></script>
     
     <footer>
       <p>©️ March 2025 Cohort</p>

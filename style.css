@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 body {
     background-color: #faf3e0;
     font-family: 'Lobster', sans-serif;
@@ -30,16 +35,16 @@ form {
     border: 2px solid #f44336;
 }
 
-/* Input and Textarea Styles */
-input, textarea, select, button {
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select,
+button {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border: 2px solid #f44336;
-    font-size: 1rem;
-    background-color: #fff7f1;
-    color: #5c3d2e;
+    ...
+}
 }
 
 input[type="checkbox"] {
